@@ -1,34 +1,37 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
-
-
-    <link rel="stylesheet" type="text/css" href="index.css">
-
-    <head>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+</head>
+<body>
         
-        <title>Decofificador</title>
-        <meta charset="UTF-8">
+    <section class="containers">
+        <section class="primeiro-container"> 
+            <textarea class=" text crip-desc" id="meu-input" placeholder="Digite o texto que deseja Criptografar ou Descriptografar!"></textarea>
+        <section class="primeiro-container-bt">
+            <button class="bt bt-criptografar" id="bt-crip" onclick="crip()" >Criptografar!</button> 
+            <button class="bt bt-descriptografar" id="id-desc" onclick="descr()">Descriptografar!</button>
+        </section>
+        </section>
 
-    </head>
+        <section class="segundo-container">
+            <textarea class=" text resultado" id="segundo-input"></textarea>
+           <section class="segundo-container-bt">
+               <button class="bt bt-copiar" id="bt-copiar" onclick="copiarTexto()">Copiar!</button> 
+           </section>
+        </section>
+    </section>
 
-     <body>
-        
-    
-        <button class="bt bt-copiar" id="bt-copiar" onclick="copiarTexto()">Copiar!</button> 
-        <button class="bt bt-criptografar" id="bt-crip" onclick="crip()" >Criptografar!</button> 
-        <button class="bt bt-descriptografar" id="id-desc" onclick="descr()">Descriptografar!</button>
 
-        <textarea class="crip-desc" id="meu-input" placeholder="Digite o texto que deseja Criptografar ou Descriptografar!"></textarea>
-        <textarea class="resultado" id="segundo-input"></textarea>
 
-        <script src="js/bt_criptografia.js"></script>
-        <script src="js/bt_descriptografia.js"></script>
-        <script src="js/bt_copiar.js"></script>
+    <script src="js/bt_criptografia.js"></script>
+    <script src="js/bt_descriptografia.js"></script>
+    <script src="js/bt_copiar.js"></script>
+</body>
 
-       
-        
-
-    </body>
 </html>
-
-
